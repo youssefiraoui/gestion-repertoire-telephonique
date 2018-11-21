@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iraoui.smi_s5.AddContact">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idEmail_ADD"
+        android:layout_alignStart="@+id/idN_P"
+        android:layout_marginBottom="99dp"
+        android:layout_marginStart="32dp"
+        android:gravity="center"
+        android:text="Ajouter Un Contact"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/idN_P"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="186dp"
+        android:ems="10"
+        android:hint="Nom et Prénom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idEmail_ADD"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/idN_P"
+        android:layout_below="@+id/idN_P"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/idTEL_ADD"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/idEmail_ADD"
+        android:layout_below="@+id/idEmail_ADD"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Téléphone"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/annu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/idTEL_ADD"
+        android:layout_below="@+id/idTEL_ADD"
+        android:layout_marginTop="48dp"
+        android:text="Annuler" />
+
+    <Button
+        android:id="@+id/addC"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/annu"
+        android:layout_alignBottom="@+id/annu"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/annu"
+        android:text="Ajouter" />
+</RelativeLayout>

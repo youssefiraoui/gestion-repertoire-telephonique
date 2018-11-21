@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iraoui.smi_s5.DetailContact">
+
+    <ImageView
+        android:id="@+id/imgD"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        app:srcCompat="@android:drawable/ic_menu_view" />
+
+    <TextView
+        android:id="@+id/nomD"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailD"
+        android:layout_below="@+id/imgD"
+        android:layout_marginTop="90dp"
+        android:text="Nom et Prénom"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/telD"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailD"
+        android:layout_below="@+id/emailD"
+        android:layout_marginTop="25dp"
+        android:text="Numéro de Téléphone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/emailD"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Email"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp" />
+</RelativeLayout>
